@@ -1,0 +1,13 @@
+The incredible and amazing Arduino Vote-O-Matic
+
+The Vote-O-Matic counts physical votes cast and sends them to a Node js based 
+voting application.
+
+The web application is built in Node.js to utilise the GET method of the HTTP module to make a request to the Arduino.
+
+It uses the Connect library to serve a static homepage, with a link to the page which displays the winning candidate.
+
+A route is mapped to the '/winner' URL and which makes the GET request to the Arduino web server,
+which then returns the number of the winning candidate as an HTTP response. 
+
+Using the returned value a page is dynamically created on the fly in the Connect server.
