@@ -1,5 +1,5 @@
 The incredible and amazing Arduino Vote-O-Matic
--------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 The Vote-O-Matic counts physical votes cast and sends them to a Node js based 
 voting application.
@@ -13,7 +13,7 @@ which then returns the number of the winning candidate as an HTTP response.
 
 Using the returned value a page is dynamically created on the fly in the Connect server.
 
--------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 There are two parts to the application, the Nodejs web connect server and the Arduino webserver
 
