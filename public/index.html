@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>The amazing incredibly awesome vote-o-matic</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+	
+	<audio src="audio/electronic.mp3" preload="auto" loop="true" autoplay="true" id="backgroundAudio"></audio>
+	<audio src="audio/drumroll.mp3" preload id="drumroll"  loop="false"></audio>
+<div id="container">
+	<header>
+
+	</header>
+	<div id="main" role="main">
+		<div class="lightbulb lightbulb1"></div>
+		<div class="lightbulb lightbulb2"></div>
+		<div class="lightbulb lightbulb3"></div>
+		<div class="lightbulb lightbulb4"></div>
+		<div class="lightbulb lightbulb5"></div>
+		<div class="lightbulb lightbulb6"></div>
+		<div class="lightbulb lightbulb7"></div>
+		<div class="lightbulb lightbulb8"></div>
+		<div class="lightbulb lightbulb9"></div>
+		<div class="lightbulb lightbulb10"></div>
+		<div class="lightbulb lightbulb11"></div>
+		<div class="lightbulb lightbulb12"></div>
+		<div class="lightbulb lightbulb13"></div>
+		<div class="lightbulb lightbulb14"></div>
+		<div class="lightbulb lightbulb15"></div>
+		<div class="lightbulb lightbulb16"></div>
+		<div class="lightbulb lightbulb17"></div>
+		<div class="lightbulb lightbulb18"></div>
+		<div class="lightbulb lightbulb19"></div>
+		<div class="lightbulb lightbulb20"></div>
+		<div class="lightbulb lightbulb21"></div>
+		<div class="lightbulb lightbulb22"></div>
+		<div class="lightbulb lightbulb23"></div>
+		<div class="lightbulb lightbulb24"></div>
+		<div class="lightbulb lightbulb25"></div>
+		<div class="lightbulb lightbulb26"></div>
+		<div class="lightbulb lightbulb27"></div>
+		<div class="lightbulb lightbulb28"></div>
+		<div class="lightbulb lightbulb29"></div>
+		<div class="lightbulb lightbulb30"></div>
+		<div class="lightbulb lightbulb31"></div>
+		<div class="lightbulb lightbulb32"></div>
+		<div class="lightbulb lightbulb33"></div>
+		<div class="lightbulb lightbulb34"></div>
+		<div class="lightbulb lightbulb35"></div>
+		<div class="lightbulb lightbulb36"></div>
+		<div class="lightbulb lightbulb37"></div>
+		<div class="lightbulb lightbulb38"></div>
+		<div class="lightbulb lightbulb39"></div>
+		<div class="lightbulb lightbulb40"></div>
+		<div class="lightbulb lightbulb41"></div>
+		<div class="lightbulb lightbulb42"></div>
+		<div class="lightbulb lightbulb43"></div>
+		<div class="lightbulb lightbulb44"></div>
+		<div class="lightbulb lightbulb45"></div>
+		<div class="lightbulb lightbulb46"></div>
+		<div class="lightbulb lightbulb47"></div>
+		<div class="lightbulb lightbulb48"></div>
+		<div class="lightbulb lightbulb49"></div>
+		<div class="lightbulb lightbulb50"></div>
+		<div id="candidate1" class="face grow1"></div>
+		<div id="candidate2" class="face grow2"></div>
+		<div id="candidate3" class="face grow3"></div>
+		
+		<a id="total" href="/winner"></a>
+
+	</div>
+	<footer>
+
+	</footer>
+</div> <!--! end of #container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="javascripts/jquery.js"><\/script>')</script>
+
+<script>
+
+$(function(){
+
+	$("#total").bind('click', function(e){
+
+		$("#backgroundAudio").get(0).pause();
+		$("#candidate1").removeClass("grow1");
+		$("#candidate2").removeClass("grow2");
+		$("#candidate3").removeClass("grow3");
+		
+		$("#drumroll").get(0).play();
+		
+		
+		
+
+		var timer = window.setTimeout(function(){
+			window.location.href = '/winner';
+		}, 5800)
+
+		e.preventDefault();
+		return false
+	})
+})
+</script>
+</body>
+</html>
