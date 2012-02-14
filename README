@@ -1,4 +1,5 @@
 The incredible and amazing Arduino Vote-O-Matic
+-------------------------------------------------------------------------------------------
 
 The Vote-O-Matic counts physical votes cast and sends them to a Node js based 
 voting application.
@@ -11,3 +12,11 @@ A route is mapped to the '/winner' URL and which makes the GET request to the Ar
 which then returns the number of the winning candidate as an HTTP response. 
 
 Using the returned value a page is dynamically created on the fly in the Connect server.
+
+-------------------------------------------------------------------------------------------
+
+There are two parts to the application, the Nodejs web connect server and the Arduino webserver
+
+The Nodejs server is handled by the arduino-client.js, it servers a static index.html found in the public folder.
+
+The Arduino server is handled by the WebServerVoteOmaticII.ino which also relies on the Arduino webserver library
