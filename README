@@ -20,3 +20,6 @@ There are two parts to the application, the Nodejs web connect server and the Ar
 The Nodejs server is handled by the arduino-client.js, it servers a static index.html found in the public folder.
 
 The Arduino server is handled by the WebServerVoteOmaticII.ino which also relies on the Arduino webserver library
+
+You can read more about our development process and links to further utilities on our blog here:
+http://www.headlondon.com/our-thoughts/technology/posts/the-incredible-and-amazing-arduino-vote-o-matic
