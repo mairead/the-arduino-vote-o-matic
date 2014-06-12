@@ -19,6 +19,8 @@ function routes(app) {
 	  	  }).on('end', function () {
 	
 			 
+
+			 
 			//if statement testing value of winning candidate
 			if(winner === "1\r\n"){
 				html += "<div id='candidate1' class='face winner'></div><div id='candidate2' class='face loser'></div><div id='candidate3' class='face loser'></div><div class='bulb1'></div>"	
